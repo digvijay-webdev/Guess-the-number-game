@@ -5,10 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess The Number Game!!</title>
+    <meta name="author" content="digvijaysinh padhiyar">
+    <meta name="keywords" content="game digvijaysinh padhiyar digvijay.tech">
+    <meta name="description" content="Guess the number game created by digvijaysinh padhiyar">
     <link rel="stylesheet" href="./src/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="./src/game.js" defer></script>
 </head>
 <body>
-    <h1>I am Awesome!</h1>
+    <main>
+        <header>
+            <span></span>
+        </header>
+        <hr>
+        <section id="stepOne">
+            <h2>Guess The Number Game</h2>
+            <em><a href="https://digvijay.tech" target="_blank">- Digvijaysinh Padhiyar</a></em>
+            <button>Start</button>
+        </section>
+        <section id="stepTwo" class="hide">
+            <h2>Instructions</h2>
+            <p>You will be given 3 chances to guess a number within the given range of numbers. However, you can have the 4th chance but it will not affect the final result. Click the button below whenever you're ready to start.</p>
+            <button>Ready</button>
+        </section>
+        <section id="stepThree" class="hide">
+            <h2>Good Luck</h2>
+            <p>
+                <small id="displayRange"></small>
+                <br>
+                <strong class="chances">3 Guesses Only</strong>
+            </p>
+            <form>
+                <label for="guessInput">Type below...</label>
+                <input type="number" name="guessInput" min="1" max="10" required>
+                <button type="submit">Guess</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
